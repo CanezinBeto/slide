@@ -47,25 +47,24 @@ img {
   transform: scale(1);
 }
 
-.next,
-.prev {
-  position: absolute;
+.arrow-nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.arrow-nav button {
+  cursor: pointer;
   border: none;
-  padding: 16px 32px;
-  text-transform: uppercase;
-  background-color: #ccc;
-  font-weight: 700;
-  letter-spacing: 1.5;
   border-radius: 4px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  background: #fb5 url(../img/arrow.svg) center no-repeat;
 }
 
-.next {
-  right: 0;
-  margin: 20px 40px 0 0;
-}
-
-.prev {
-  margin: 20px 0 0 40px;
+.arrow-nav button.prev {
+  transform: rotate(-180deg);
 }
 
 [data-control='slide'] {
@@ -88,4 +87,29 @@ img {
 [data-control='slide'] li.active a,
 [data-control='slide'] li a:hover {
   background: #e54;
+}
+
+.custom-control {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.custom-control li {
+  opacity: 0.8;
+  transform: scale(0.8);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.custom-control li.active {
+  opacity: 1;
+  transform: scale(1);
 }
