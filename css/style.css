@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -15,6 +17,7 @@ img {
 
 .slide-wrapper {
   overflow: hidden;
+  position: relative;
 }
 
 .slide {
@@ -42,4 +45,25 @@ img {
 .slide li.active {
   opacity: 1;
   transform: scale(1);
+}
+
+.next,
+.prev {
+  position: absolute;
+  border: none;
+  padding: 16px 32px;
+  text-transform: uppercase;
+  background-color: #ccc;
+  font-weight: 700;
+  letter-spacing: 1.5;
+  border-radius: 4px;
+}
+
+.next {
+  right: 0;
+  margin: 20px 40px 0 0;
+}
+
+.prev {
+  margin: 20px 0 0 40px;
 }
