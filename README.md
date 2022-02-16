@@ -7,7 +7,7 @@ Ele foi criado para que seu código sejá reaproveitado por outros desenvolvedor
 - É totalmente responsivo
 - É possivel usar o slide com diversos elementos HTML
 
-## Técnologias Utilizadas
+## Tecnologias Utilizadas
 
 - JavaScript
 - CSS3
